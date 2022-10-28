@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Nunito:ital,wght@0,500;1,500&display=swap");
+body {
+  font-size: 18px;
+  color: black;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url("img/bck.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.profile {
+  width: 500px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  position: relative;
+  border: 1px solid #FAF9F6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 1rem;
+  border-radius: 2.5rem;
+}
+.profile__img img {
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profile__desc {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile__desc h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.profile__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.profile__links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 35%;
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.15s ease-in-out;
+}
+@media screen {
+  .profile__links a:hover {
+    transform: scale(1.2);
+  }
+}
+.profile__links__github {
+  background: linear-gradient(-45deg, #181818, black);
+  color: white;
+}/*# sourceMappingURL=style.css.map */
