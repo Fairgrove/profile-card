@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Nunito:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Oswald:wght@500&display=swap');
+
 //1rem equals the font size of the html element
+
 body {
-    font-size: 18px;
+    font: 18px "M PLUS Rounded 1c";
     color: black;
     min-height: 100vh;
     padding: 2rem; 
@@ -47,8 +49,9 @@ body {
         flex-direction: column;
         gap: 10px;
         h1 {
-            font-size: 2rem;
+            //font-size: 2rem;
             font-weight: bold;
+            font: 2rem "Oswald";
         }
     }
 
@@ -57,7 +60,7 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
 
         a {
             display: inline-flex;
