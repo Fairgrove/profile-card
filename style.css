@@ -54,6 +54,7 @@ body::before {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  gap: 10px;
 }
 .profile__links a {
   display: inline-flex;
@@ -72,6 +73,13 @@ body::before {
   }
 }
 .profile__links__github {
-  background: linear-gradient(-45deg, #181818, black);
+  background: linear-gradient(-45deg, #181818, #302030);
   color: white;
+}
+.profile__links__linkedin {
+  color: white;
+  background: #0077b5;
+}
+.profile__links__wago {
+  background: black;
 }/*# sourceMappingURL=style.css.map */

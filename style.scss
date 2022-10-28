@@ -57,6 +57,7 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
+        gap: 10px;
 
         a {
             display: inline-flex;
@@ -79,8 +80,15 @@ body {
         }
 
         &__github{
-            background: linear-gradient(-45deg,#181818, black);
+            background: linear-gradient(-45deg,#181818, #302030);
             color: white;
+        }
+        &__linkedin{
+            color: white;
+            background: #0077b5;
+        }
+        &__wago{
+            background: black;
         }
     }
 }
