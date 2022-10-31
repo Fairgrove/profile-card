@@ -29,7 +29,7 @@ const sigma = 10;
 const rho = 28;
 const beta = 8/3;
 
-const dt = 0.03;
+const dt = 0.02;
 
 var xStack = [];
 let yStack = [];
@@ -49,7 +49,7 @@ function draw() {
 
     // drawPoint(x*30, y*10);
 
-    if (xStack.length >= 1000) {
+    if (xStack.length >= 333) {
         xStack.shift();
         yStack.shift();
 
@@ -64,8 +64,8 @@ function draw() {
         drawPoint(xStack[i]*40, yStack[i]*8);
     }
 
-    ctx.font = "30px Arial";
-    ctx.fillText(xStack.length, -200, -200);
+    // ctx.font = "30px Arial";
+    // ctx.fillText(xStack.length, -200, -200);
     
     window.requestAnimationFrame(draw);
 }
