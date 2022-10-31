@@ -57,6 +57,10 @@ function draw() {
         yStack.push(y);
     }
 
+    ctx.fillStyle = "red";
+    ctx.font = "30px Arial";
+    ctx.fillText(xStack.length, -200, -250);
+
     ctx.beginPath();
     ctx.strokeStyle = "White"
 
@@ -64,9 +68,6 @@ function draw() {
         ctx.lineTo(xStack[i]*40, yStack[i]*8);
     }
     ctx.stroke();
-
-    // ctx.font = "30px Arial";
-    // ctx.fillText(xStack.length, -200, -200);
     
     window.requestAnimationFrame(draw);
 }
