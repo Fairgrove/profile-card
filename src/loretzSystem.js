@@ -8,7 +8,7 @@ canvas.height = HEIGHT;
 const ctx = canvas.getContext("2d");   
 ctx.fillStyle = 'rgba(33, 33, 36, 1)';
 ctx.fillRect(0,0, WIDTH, HEIGHT);
-ctx.filter = 'blur(2px)';  
+//ctx.filter = 'blur(2px)';  
 
 function background(){
     ctx.fillStyle = 'rgba(33, 33, 36, 1)';
