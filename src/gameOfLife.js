@@ -8,14 +8,13 @@ canvas.height = HEIGHT;
 const ctx = canvas.getContext("2d");   
 ctx.fillStyle = 'rgba(33, 33, 36, 1)';
 ctx.fillRect(0,0, WIDTH, HEIGHT);
-//ctx.filter = 'blur(2px)';  
 
 function background(){
     ctx.fillStyle = 'rgba(33, 33, 36, 1)';
     ctx.fillRect(0,0, WIDTH, HEIGHT);
 }
 
-const cellSize = 5;
+const cellSize =15;
 const cols = Math.floor(WIDTH/cellSize);
 const rows = Math.floor(HEIGHT/cellSize);
 
@@ -50,6 +49,10 @@ function draw() {
             if (grid[ii][jj]){
                 ctx.fillRect(ii*cellSize, jj*cellSize, cellSize, cellSize);
                 
+                // ctx.beginPath();
+                // ctx.arc(ii*cellSize, jj*cellSize, cellSize/2, 0, 2 * Math.PI);
+                // ctx.stroke();
+
                 // rules for living cells
                 if (neighborSum(ii,jj) == 2 || neighborSum(ii,jj) == 3){
                     next[ii][jj] = 1;
