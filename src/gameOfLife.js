@@ -14,7 +14,7 @@ function background(){
     ctx.fillRect(0,0, WIDTH, HEIGHT);
 }
 
-const cellSize =15;
+const cellSize = 15;
 const cols = Math.floor(WIDTH/cellSize);
 const rows = Math.floor(HEIGHT/cellSize);
 
