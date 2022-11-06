@@ -20,7 +20,7 @@ body {
   z-index: 110;
   width: 500px;
   border: 1px solid #FAF9F6;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 20px;
   padding: 1rem;
